@@ -74,11 +74,11 @@ const Navbar = () => {
                   Schedule
                 </NavLink>
               </li> */}
-              <li>
+{/*               <li>
                 <NavLink to="/shop" className="border hover:text-primary border-white p-1">
                   Shop
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/about" className="border hover:text-primary border-white p-1">
                   About
