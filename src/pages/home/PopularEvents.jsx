@@ -13,7 +13,9 @@ import EventCard from '../allEvents/EventCard';
 const PopularEvents = () => {
     const fetchEvents = async () => {
         try {
-          const response = await axios.get("https://dream-craft-server.vercel.app/events");
+          const response = await axios.get(
+            `${import.meta.env.VITE_API_BASE_URL}/events`
+        );
           return response.data; 
         } catch (error) {
           return error.massage;
