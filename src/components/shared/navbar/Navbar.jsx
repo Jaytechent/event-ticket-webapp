@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { FiAlignJustify, FiLogOut, FiUser } from "react-icons/fi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import logo from "../../../assets/logo/dream-craft.png";
+import logo from "../../../assets/logo/logo.svg";
 import useAuth from "../../../hooks/useAuth";
 import TopBar from "./TopBar";
 // import TopBar from "./TopBar";
