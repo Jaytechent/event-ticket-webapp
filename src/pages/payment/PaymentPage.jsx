@@ -362,7 +362,7 @@ const currenttickettax = taxes * addMoreTicket
                   Continue to secure payment
                 </button>
               ) : (
-                <Link className='w-full' to='/login'>
+               <Link className='w-full' to='/login' state={{ from: `/payment/${params._id}` }}>
                   <button
                     className='bg-rose-700 w-full rounded-md py-2 px-4 mt-2 text-white font-medium lg:text-xl text-xl md:text-sm'
                   >
