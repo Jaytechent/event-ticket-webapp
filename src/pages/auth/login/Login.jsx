@@ -17,7 +17,7 @@ const Login = () => {
     } = useForm();
     const location = useLocation();
 const from = (location.state && location.state.from) || "/";
-
+ console.log("Redirecting to:", from);
     const onSubmit = async (data) => {
         const toastLoading = toast.loading('User Signing...')
         const {email, password} = data
@@ -32,6 +32,7 @@ const from = (location.state && location.state.from) || "/";
                 navigation('/dashboard/organiger')
             }else{
                 navigation(from)
+                   console.log("Redirecting to:", from);
             }
         } catch (error) {
             toast.dismiss(toastLoading)
