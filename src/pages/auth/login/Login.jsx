@@ -16,7 +16,7 @@ const Login = () => {
         formState: { errors },
     } = useForm();
     const location = useLocation();
-    let from = location?.state?.from?.pathname || "/";
+const from = (location.state && location.state.from) || "/";
 
     const onSubmit = async (data) => {
         const toastLoading = toast.loading('User Signing...')
